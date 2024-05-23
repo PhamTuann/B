@@ -1,0 +1,34 @@
+//enable crc gen
+enable_crc_fast6 		:001
+enable_crc_fast4		:010
+enable_crc_fast3		:011
+enable_crc_serial		:100
+enable_crc_enhanced		:101
+
+
+//enable crc check
+enable_crc_check_fast6 		:01
+enable_crc_check_fast4		:10
+enable_crc_check_fast3		:11
+
+//enable crc check channel
+enable_crc_check_serial		:01
+enable_crc_check_enhanced	:10
+
+//done pre data
+done_pre_data_fast6		:001
+done_pre_data_fast4		:010
+done_pre_data_fast3		:011
+done_pre_data_short		:100
+done_pre_data_enhanced		:101
+
+//load bit
+
+//frame format of fast channels
+localparam TWO_FAST_CHANNELS_12_12 = 1;
+localparam ONE_FAST_CHANNELS_12 = 2;
+localparam HIGH_SPEED_ONE_FAST_CHANNEL_12 = 3;
+localparam SECURE_SENSOR = 4;
+localparam SINGLE_SENSOR_12_0 = 5;
+localparam TWO_FAST_CHANNELS_14_10 = 6;
+localparam TWO_FAST_CHANNELS_16_8 = 7;
